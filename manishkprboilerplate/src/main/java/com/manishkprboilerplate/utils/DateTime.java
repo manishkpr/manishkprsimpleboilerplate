@@ -1,0 +1,38 @@
+package com.manishkprboilerplate.utils;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+/**
+ * Created by edge on 1/3/17.
+ */
+
+public class DateTime {
+
+    public static boolean isDateGreater(String date_1, String date_2){
+        return compare(date_1,date_2,new SimpleDateFormat("yyyy-MM-dd"));
+    }
+
+    public static boolean isFirstDateTimeGreater(String date_1, String date_2){
+        return compare(date_1,date_2,new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+    }
+
+    static boolean compare(String date_1, String date_2,SimpleDateFormat sdf){
+
+
+        try {
+            Date date2 = sdf.parse(date_1);
+            Date date3 = sdf.parse(date_2);
+            if(date3.compareTo(date2) < 0){
+                return true;
+            }
+        } catch (ParseException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return false;
+
+    }
+
+}

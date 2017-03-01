@@ -5,13 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.manishkprboilerplate.utils.DateTime;
 import com.manishkprsimpleboilerplate.models.Suggestions;
-
-import org.w3c.dom.Text;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import timber.log.Timber;
 
 
 /**
@@ -69,5 +70,11 @@ public class DemoListingActivity extends AppCompatActivity implements DemoListin
             }
         }
         results.setText("Error");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        demoListingPresenter.detachView();
     }
 }
