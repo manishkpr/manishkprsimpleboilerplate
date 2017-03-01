@@ -41,7 +41,7 @@ Add it in your root build.gradle at the end of repositories:
 Add the dependency
 
 	dependencies {
-	        compile 'com.github.manishkpr:manishkprsimpleboilerplate:v1.0.4'
+	        compile 'com.github.manishkpr:manishkprsimpleboilerplate:v1.0.6'
 	}
 ## For Maven
 
