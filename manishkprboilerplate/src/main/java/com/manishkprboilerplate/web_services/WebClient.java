@@ -29,7 +29,7 @@ public class WebClient {
 
         if (retrofit==null) {
             retrofit = new Retrofit.Builder()
-                    .baseUrl(baseUrl)
+                    .baseUrl((baseUrl==null) ? BASE_URL : baseUrl)
                     .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(ClientOkHttp.getOKHTTPClient())
