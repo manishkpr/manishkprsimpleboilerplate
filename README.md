@@ -61,7 +61,7 @@ Add the dependency
 	<dependency>
 	    <groupId>com.github.manishkpr</groupId>
 	    <artifactId>manishkprsimpleboilerplate</artifactId>
-	    <version>v1.0.4</version>
+	    <version>v1.0.6</version>
 	</dependency>
 	
 ### How to implement a new screen following MVP
