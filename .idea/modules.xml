@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file:///Android-studio-apps/manishkprsimpleboilerplate/app/app.iml" filepath="/Android-studio-apps/manishkprsimpleboilerplate/app/app.iml" />
+      <module fileurl="file:///Android-studio-apps/manishkprsimpleboilerplate/manishkprboilerplate/manishkprboilerplate.iml" filepath="/Android-studio-apps/manishkprsimpleboilerplate/manishkprboilerplate/manishkprboilerplate.iml" />
       <module fileurl="file:///Android-studio-apps/manishkprsimpleboilerplate/manishkprsimpleboilerplate.iml" filepath="/Android-studio-apps/manishkprsimpleboilerplate/manishkprsimpleboilerplate.iml" />
     </modules>
   </component>

@@ -9,6 +9,7 @@
           <set>
             <option value="/Android-studio-apps/manishkprsimpleboilerplate" />
             <option value="/Android-studio-apps/manishkprsimpleboilerplate/app" />
+            <option value="/Android-studio-apps/manishkprsimpleboilerplate/manishkprboilerplate" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
