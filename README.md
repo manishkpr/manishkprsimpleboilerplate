@@ -5,6 +5,8 @@
 
 I have created the simple Android MVP Boilerplate
 
+[For POJO Models use :] (http://www.jsonschema2pojo.org/)
+
 - Support libraries
 
 - [RxJava](https://github.com/ReactiveX/RxJava) and [RxAndroid](https://github.com/ReactiveX/RxAndroid) 
