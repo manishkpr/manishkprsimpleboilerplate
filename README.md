@@ -1,0 +1,2 @@
+# manishkprsimpleboilerplate
+Android Simple Boilerplate
