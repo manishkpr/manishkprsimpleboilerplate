@@ -3,9 +3,10 @@ package com.manishkprboilerplate.utils;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 /**
- * Created by edge on 1/3/17.
+ * Created by Munish on 1/3/17.
  */
 
 public class DateTime {
@@ -33,6 +34,14 @@ public class DateTime {
         }
         return false;
 
+    }
+
+    public static String getDateTime() {
+        return getDateTimeFormat("yyyy-MM-dd HH:mm:ss");
+    }
+
+    public static String getDateTimeFormat(String format){
+        return new SimpleDateFormat(format, Locale.getDefault()).format(new Date());
     }
 
 }
