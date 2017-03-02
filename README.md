@@ -41,7 +41,7 @@ Add it in your root build.gradle at the end of repositories:
 Add the dependency
 
 	dependencies {
-	        compile 'com.github.manishkpr:manishkprsimpleboilerplate:v1.0.6'
+	        compile 'com.github.manishkpr:manishkprsimpleboilerplate:v1.0.7'
 	}
 ## For Maven
 
@@ -61,7 +61,7 @@ Add the dependency
 	<dependency>
 	    <groupId>com.github.manishkpr</groupId>
 	    <artifactId>manishkprsimpleboilerplate</artifactId>
-	    <version>v1.0.6</version>
+	    <version>v1.0.7</version>
 	</dependency>
 	
 ### How to implement a new screen following MVP
