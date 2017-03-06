@@ -5,6 +5,8 @@
 
 I have created the simple Android MVP Boilerplate
 
+[Release Jitpack]  (https://jitpack.io/#manishkpr/manishkprsimpleboilerplate)
+
 [For POJO Models use :] (http://www.jsonschema2pojo.org/) http://www.jsonschema2pojo.org/
 
 - Support libraries
