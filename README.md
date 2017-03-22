@@ -5,6 +5,8 @@
 
 I have created the simple Android MVP Boilerplate
 
+[Release Jitpack]  (https://jitpack.io/#manishkpr/manishkprsimpleboilerplate)
+
 [For POJO Models use :] (http://www.jsonschema2pojo.org/) http://www.jsonschema2pojo.org/
 
 - Support libraries
@@ -41,7 +43,7 @@ Add it in your root build.gradle at the end of repositories:
 Add the dependency
 
 	dependencies {
-	        compile 'com.github.manishkpr:manishkprsimpleboilerplate:v1.0.7'
+	        compile 'com.github.manishkpr:manishkprsimpleboilerplate:v1.0.8'
 	}
 ## For Maven
 
@@ -61,7 +63,7 @@ Add the dependency
 	<dependency>
 	    <groupId>com.github.manishkpr</groupId>
 	    <artifactId>manishkprsimpleboilerplate</artifactId>
-	    <version>v1.0.7</version>
+	    <version>v1.0.8</version>
 	</dependency>
 	
 ### How to implement a new screen following MVP
