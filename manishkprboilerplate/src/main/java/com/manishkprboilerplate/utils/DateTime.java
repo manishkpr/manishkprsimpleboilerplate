@@ -44,4 +44,25 @@ public class DateTime {
         return new SimpleDateFormat(format, Locale.getDefault()).format(new Date());
     }
 
+    public static String getConvertedDate(String finalDate){
+
+        return getConvertedDate(finalDate,"yyyy-MM-dd","MMM yyyy",Locale.ENGLISH);
+
+    }
+
+    public static String getConvertedDate(String finalDate,String dateFormat,String desireDateFormat,Locale locale){
+
+
+        Date date = null;
+        try {
+            date = new SimpleDateFormat(dateFormat).parse(finalDate);
+        } catch (ParseException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        return new SimpleDateFormat(desireDateFormat, locale).format(date);
+
+    }
+
 }
