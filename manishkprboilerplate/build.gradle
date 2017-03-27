@@ -28,6 +28,8 @@ android {
 
 dependencies {
 
+    final SUPPORT                   =  "25.1.1";
+
     final RETROFIT                  =  "2.1.0";
     final GSON                      =  "2.6.1";
 
@@ -52,6 +54,7 @@ dependencies {
     compile "com.google.code.gson:gson:$GSON"
     compile "com.squareup.retrofit2:converter-gson:$RETROFIT"
 
+    compile "com.android.support:appcompat-v7:$SUPPORT"
 
 
     // RX Java
