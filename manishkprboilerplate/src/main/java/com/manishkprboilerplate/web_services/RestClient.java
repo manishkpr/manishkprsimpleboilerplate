@@ -14,14 +14,14 @@ public class RestClient {
 
     static RestClient restClient;
 
-    public synchronized RestClient getInstance(Activity activity){
+    public static synchronized RestClient getInstance(Activity activity){
 
         if(restClient==null){
             restClient = new RestClient(activity);
         }
 
         return restClient;
-        
+
     }
 
     Activity activity;
