@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">manishkprboilerplate</string>
+    <string name="err_no_internet">No Internet Connection!</string>
 </resources>
