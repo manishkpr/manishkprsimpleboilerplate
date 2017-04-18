@@ -19,8 +19,10 @@ public class Device {
             return telephonyManager.getDeviceId();
         } catch (SecurityException e) {
             e.printStackTrace();
+        }catch (NullPointerException e) {
+            e.printStackTrace();
         }
-        return null;
+        return "";
     }
 
     public static String getDeviceID(Activity activity){
@@ -29,7 +31,9 @@ public class Device {
             return telephonyManager.getDeviceId();
         } catch (SecurityException e) {
             e.printStackTrace();
+        }catch (NullPointerException e) {
+            e.printStackTrace();
         }
-        return null;
+        return "";
     }
 }
