@@ -39,6 +39,20 @@ public class WebClient {
         return retrofit;
 
     }
+    
+     public  Retrofit getNewClient(String baseUrl) {
+
+            retrofit = new Retrofit.Builder()
+                    .baseUrl((baseUrl==null) ? BASE_URL : baseUrl)
+                    .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .client(ClientOkHttp.getOKHTTPClient())
+                    .build();
+       
+
+        return retrofit;
+
+    }
 
     public WebClient URL(String url){
         BASE_URL = url;
