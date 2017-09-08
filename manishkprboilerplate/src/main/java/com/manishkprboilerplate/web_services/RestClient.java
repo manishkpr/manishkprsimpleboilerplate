@@ -65,6 +65,10 @@ public class RestClient {
         setRequestTask(new RequestTask(activity).url(url).callBack(callBack));
         getRequestTask().execute();
     }
+    public void getRequest(NetworkCallBack callBack,HashMap<String ,String> param){
+        setRequestTask(new RequestTask(activity).url(url).param(param).callBack(callBack));
+        getRequestTask().execute();
+    }
 
     public void cancelRequest(){
         if(requestTask!=null){
