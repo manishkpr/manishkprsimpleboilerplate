@@ -23,7 +23,7 @@ public class WebHttp {
 
     final static String TAG    =   WebHttp.class.getClass().getSimpleName();
 
-    private static final int CONNECTION_TIMEOUT = 1000;
+    private static final int CONNECTION_TIMEOUT = 10000;
     private static final int READ_INTERVAL_TIMEOUT = 10000 ;
 
     public static HttpResponse getMethod(String urlAddress){
