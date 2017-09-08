@@ -7,6 +7,8 @@ import android.util.Log;
 import com.manishkprboilerplate.R;
 import com.manishkprboilerplate.models.HttpResponse;
 
+import java.util.HashMap;
+
 
 public class RequestTask extends AsyncTask<HttpResponse,Void,HttpResponse> {
 
@@ -15,6 +17,7 @@ public class RequestTask extends AsyncTask<HttpResponse,Void,HttpResponse> {
     Activity activity;
     String url;
     NetworkCallBack callBack;
+    HashMap<String,String> param;
 
     public RequestTask (Activity activity){
         this.activity = activity;
@@ -24,6 +27,12 @@ public class RequestTask extends AsyncTask<HttpResponse,Void,HttpResponse> {
         this.url = url;
         return this;
     }
+    public RequestTask param( HashMap<String,String> param) {
+        this.param = param;
+        return this;
+    }
+
+
 
     public RequestTask callBack(NetworkCallBack callBack) {
         this.callBack = callBack;
@@ -43,7 +52,13 @@ public class RequestTask extends AsyncTask<HttpResponse,Void,HttpResponse> {
     @Override
     protected HttpResponse doInBackground(HttpResponse... params) {
         HttpResponse result = null;
-        result =  WebHttp.getMethod(url);
+        if(this.param==null) {
+            result = WebHttp.getMethod(url);
+            Log.e(getClass().getSimpleName(),"Executing get...");
+        }else{
+            result = WebHttp.postMethod(url,param);
+            Log.e(getClass().getSimpleName(),"Executing post...");
+        }
         return result;
     }
 
@@ -52,7 +67,9 @@ public class RequestTask extends AsyncTask<HttpResponse,Void,HttpResponse> {
         super.onPostExecute(s);
         if(s.getStatusCode()==200) {
             callBack.getResults(s.getResponse());
+            Log.e(getClass().getSimpleName(),"Response"+s.getResponse().toString());
         }else{
+            Log.e(getClass().getSimpleName(),"Response"+s.getResponse().toString());
             callBack.onError(s.getStatusCode(),s.getResponse());
         }
     }
